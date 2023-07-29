@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <script type="text/javascript" src="calculator.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <!-- 電卓テーブル -->
+    <form name="calculator">
+        <table>
+            <caption class="caption">Calcurator</caption>
+
+            <!-- 一段目現在の演算子表示 -->
+            <tr>
+                <td colspan="4">
+                    <div id="operator">clear</div>
+                </td>
+            <tr>
+                <!-- 2段目計算過程 -->
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="process" value="0" hidden>
+                </td>
+            </tr>
+            <!-- 3段目入力値と結果 -->
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="result" value="0" class="result" disabled>
+                </td>
+            </tr>
+            <!-- 4段目 -->
+            <tr>
+                <td><input type="button" id="AC" value="AC" class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="+/-" value="+/-" class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="." value="." class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="%" value="%" class="button" onclick="calc(this)"></td>
+            </tr>
+            <!-- 5段目 -->
+            <tr>
+                <td><input type="button" id="1" value="1" class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="2" value="2" class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="3" value="3" class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="÷" value="÷" class="button" onclick="calc(this)"></td>
+            </tr>
+            <!-- 6段目 -->
+            <tr>
+                <td><input type="button" id="4" value="4" class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="5" value="5" class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="6" value="6" class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="×" value="×" class="button" onclick="calc(this)"></td>
+            </tr>
+            <!-- 7段目 -->
+            <tr>
+                <td><input type="button" id="7" value="7" class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="8" value="8" class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="9" value="9" class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="-" value="-" class="button" onclick="calc(this)"></td>
+            </tr>
+            <!-- 8段目 -->
+            <tr>
+                <td><input type="button" id="00" value="00" class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="0" value="0" class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="=" value="=" class="button" onclick="calc(this)"></td>
+                <td><input type="button" id="+" value="+" class="button" onclick="calc(this)"></td>
+            </tr>
+</body>
+
+</html>
